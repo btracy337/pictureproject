@@ -28,6 +28,28 @@ public class IntArrayWorker
     }
     return total;
   }
+  public int getCount(int numberToFind)
+  {
+	  int count = 0;
+	  
+	  
+	  
+	  for(int [] rowArray: matrix)
+	  {
+		  for(int item: rowArray)
+		  {
+			  if(item == numberToFind)
+			  {
+				  count++;
+			  }
+		  }
+	  }
+		  
+		  
+		  
+		  
+	  return count;
+  }
   
   /**
    * Method to return the total using a nested for-each loop
